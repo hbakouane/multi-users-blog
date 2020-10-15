@@ -18,10 +18,10 @@ class CreateCommentsTable extends Migration
             $table->string('comments', 500);
             // Create a foreign key Post Id
             $table->unsignedBigInteger('posts_id');
-            $table->foreign('posts_id')->references('id')->on('posts')->onDelete('cascade');
+            $table->foreign('posts_id')->references('id')->on('posts');
             // Create a foreign key user Id
             $table->unsignedBigInteger('users_id');
-            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('users_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

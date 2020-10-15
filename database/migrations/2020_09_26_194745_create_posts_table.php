@@ -20,10 +20,10 @@ class CreatePostsTable extends Migration
             $table->longText('body');
             // Foreign Key: user id
             $table->unsignedBigInteger('users_id');
-            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('users_id')->references('id')->on('users');
             // Foreign Key: category id
             $table->unsignedBigInteger('categories_id');
-            $table->foreign('categories_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreign('categories_id')->references('id')->on('categories');
             $table->boolean('visibility');
             $table->string('post_image');
             $table->timestamps();
