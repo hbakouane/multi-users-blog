@@ -7,8 +7,9 @@
 <code>php artisan serve --port=3000</code><br><br>
 now you can visit localhost:3000 and see the project
 
-To generate users, categories, posts and comments, run this command (images cannot be generated if the lorem is down) <br>
+To generate users, categories, posts and comments, run this command (images cannot be generated if the http://lorempixel.com/ is down) <br>
 <code>php artisan db:seed</code>
+the password of the whole generated users is password
 
 # Screenshots
 ## Homepage
@@ -31,7 +32,7 @@ To generate users, categories, posts and comments, run this command (images cann
     <img align="center" src="https://i.ibb.co/cJqm1n9/post-page.png">    
 </p>
 
-## Comments Section On the signle post page
+## Comments Section On the single post page
 <p>
     <img align="center" src="https://i.ibb.co/kyb9tXW/comments.png">    
 </p>
@@ -44,6 +45,15 @@ To generate users, categories, posts and comments, run this command (images cann
 ## Profile Page
 <p>
     <img align="center" src="https://i.ibb.co/0j07PCs/profile-page.png">    
+</p>
+
+## Settings Page
+#### to see this page you should enter your password first
+<p>
+    <img align="center" src="https://i.ibb.co/WgPWTZv/password-confirm.png">    
+</p>
+<p>
+    <img align="center" src="https://i.ibb.co/7nqjJ8n/settings.png">    
 </p>
 
 ## Search Page

@@ -4,13 +4,6 @@
     <!-- Lastes Posts -->
     <div class="container-fluid">
         <div class="container">
-            @guest
-            <div class="alert alert-info">
-                <b>NOTE:</b>
-                <li>Authors levels, Admin Dashboard will be added soon.</li>
-                <li>After, Weekly posts updates per emails.</li>
-            </div>
-            @endguest
             <h2 class="text-center font-weight-bolder text-dark">Latest Blog Posts</h2>
             <br>
             <form action="/search/posts/" method="GET">
