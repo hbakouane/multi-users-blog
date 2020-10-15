@@ -1,4 +1,15 @@
-# A multi users blog, let's get into it.
+# A multi users blog built with Laravel 8
+
+# ⚙️ Used Technologies
+
+💅 FrontEnd : Js, Css, Bootstrap
+
+🛠 Backend : Laravel 8
+
+💾 Database : MySql
+
+☁️ Deployment : Github
+
 #### To run this project make sure you ran these commands
 <code>composer install</code><br><br>
 <code>copy .env.example .env</code><br><br>
@@ -11,7 +22,7 @@ To generate users, categories, posts and comments, run this command (images cann
 <code>php artisan db:seed</code>
 the password of the whole generated users is password
 
-# Screenshots
+# 📷 Screenshots
 ## Homepage
 <p>
     <img align="center" src="https://i.ibb.co/DgRkW8R/homepage.png">    
