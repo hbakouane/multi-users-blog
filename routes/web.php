@@ -22,7 +22,15 @@ use \App\Http\Controllers\SearchController;
 |
 */
 
+
 Auth::routes(['verify' => true]);
+
+Route::prefix('admin')->group(function () {
+        Route::get('/', function () {
+                return view("admin.dashboard");
+        });
+});
+
 Route::get('/', [HomePageController::class, 'index']);
 Route::get('/posts', [HomeController::class, 'index'])
         ->name('home');
@@ -45,7 +53,6 @@ Route::get('/user/delete/{id}', [DeleteController::class, 'deleteUser'])
         ->name('delete.user');
 Route::any('/search/posts/', [SearchController::class, 'index'])
         ->name('search');
-
 Route::fallback(function() {
     return view("errors.404");
 });
